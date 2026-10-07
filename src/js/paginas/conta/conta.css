@@ -1,0 +1,246 @@
+/* Cor de destaque nesta tela: só o botão Entrar (no estado sem sessão).
+   Com sessão, nenhum elemento usa destaque: Sair não é ação principal. */
+
+.conta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-5);
+  padding: var(--espaco-6) var(--espaco-4) 0;
+}
+
+.conta__topo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+}
+
+.conta__titulo {
+  font-size: var(--txt-2xl);
+}
+
+.conta__apoio {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+  overflow-wrap: anywhere;
+}
+
+.conta__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+}
+
+.conta__campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+}
+
+.conta__campo label {
+  font-size: var(--txt-sm);
+  font-weight: 700;
+}
+
+.conta__campo input {
+  min-width: 0;
+  padding: var(--espaco-3);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-p);
+  background-color: var(--superficie-1);
+  font-size: var(--txt-lg);
+}
+
+.conta__erro {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-2);
+  padding: var(--espaco-3);
+  border-radius: var(--raio-p);
+  background-color: var(--estado-erro-fundo);
+  color: var(--estado-erro-tinta);
+  font-size: var(--txt-sm);
+}
+
+.conta__erro[hidden] {
+  display: none;
+}
+
+.conta__erro svg {
+  flex: 0 0 auto;
+}
+
+.conta__entrar {
+  padding: var(--espaco-4);
+  border: none;
+  border-radius: var(--raio-p);
+  background-color: var(--cor-destaque);
+  color: var(--cor-sobre-cor);
+  font-size: var(--txt-lg);
+  font-weight: 700;
+}
+
+.conta__teste {
+  padding: var(--espaco-3);
+  border: 1px dashed var(--linha);
+  border-radius: var(--raio-p);
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+.conta__teste summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.conta__teste p {
+  margin: var(--espaco-2) 0;
+}
+
+.conta__teste ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  list-style: none;
+}
+
+.conta__teste li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--espaco-2);
+}
+
+.conta__teste li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.conta__perfil {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-3);
+}
+
+.conta__avatar {
+  flex: 0 0 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  border-radius: var(--raio-m);
+  background-color: var(--cor-primaria);
+  color: var(--cor-sobre-cor);
+  font-size: var(--txt-2xl);
+  font-weight: 700;
+}
+
+.conta__dados {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.conta__nome {
+  font-size: var(--txt-xl);
+}
+
+.conta__secao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+.conta__secao-topo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--espaco-2);
+}
+
+.conta__secao-topo h2 {
+  font-size: var(--txt-md);
+}
+
+.conta__contagem {
+  flex: 0 0 auto;
+  color: var(--tinta-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.conta__lista {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--superficie-1);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-m);
+  overflow: hidden;
+}
+
+.conta__lista li + li {
+  border-top: 1px solid var(--linha);
+}
+
+.conta__mutirao {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-3);
+  padding: var(--espaco-3);
+  color: var(--tinta-1);
+  text-decoration: none;
+}
+
+.conta__mutirao-info {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.conta__mutirao-titulo {
+  font-weight: 700;
+}
+
+.conta__mutirao-data {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+.conta__mutirao-vagas {
+  flex: 0 0 auto;
+  padding: var(--espaco-1) var(--espaco-2);
+  border-radius: var(--raio-pilula);
+  background-color: var(--cor-primaria-lavada);
+  color: var(--cor-primaria);
+  font-size: var(--txt-xs);
+  font-weight: 700;
+}
+
+.conta__vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--espaco-2);
+  padding: var(--espaco-4);
+  border: 1px dashed var(--linha);
+  border-radius: var(--raio-m);
+  color: var(--tinta-2);
+}
+
+.conta__vazio a {
+  font-weight: 700;
+}
+
+.conta__sair {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: var(--espaco-2) var(--espaco-4);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-p);
+  background-color: var(--superficie-1);
+  color: var(--tinta-1);
+  font-weight: 700;
+}

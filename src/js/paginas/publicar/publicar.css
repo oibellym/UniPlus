@@ -1,0 +1,159 @@
+/* Cor de destaque nesta tela: só o botão Publicar mutirão. */
+
+.publicar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-5);
+  padding: var(--espaco-5) var(--espaco-4) 0;
+}
+
+.publicar--bloqueado {
+  gap: var(--espaco-4);
+  padding-top: var(--espaco-6);
+}
+
+.publicar__topo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+}
+
+.publicar__titulo {
+  font-size: var(--txt-2xl);
+}
+
+.publicar__apoio {
+  color: var(--tinta-2);
+}
+
+.publicar__entrar {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: var(--espaco-3) var(--espaco-4);
+  border-radius: var(--raio-p);
+  background-color: var(--cor-primaria);
+  color: var(--cor-sobre-cor);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publicar__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+}
+
+.publicar__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+  padding: var(--espaco-3) var(--espaco-4) var(--espaco-4);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-m);
+  background-color: var(--superficie-1);
+  min-width: 0;
+}
+
+.publicar__grupo legend {
+  padding: 0 var(--espaco-1);
+  font-weight: 700;
+}
+
+.publicar__linha {
+  display: flex;
+  gap: var(--espaco-3);
+}
+
+.publicar__campo {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  min-width: 0;
+}
+
+.publicar__campo label {
+  font-size: var(--txt-sm);
+  font-weight: 700;
+}
+
+.publicar__opcional {
+  color: var(--tinta-3);
+  font-weight: 400;
+}
+
+.publicar__campo input,
+.publicar__campo select,
+.publicar__campo textarea {
+  min-width: 0;
+  padding: var(--espaco-3);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-p);
+  background-color: var(--superficie-1);
+  font-size: var(--txt-lg);
+}
+
+.publicar__campo textarea {
+  resize: vertical;
+}
+
+.publicar__campo input:user-invalid,
+.publicar__campo select:user-invalid {
+  border-color: var(--estado-erro-tinta);
+  background-color: var(--estado-erro-fundo);
+}
+
+/* O único número digitado ganha corpo grande, como o preço no KiOferta. */
+.publicar__vagas {
+  font-size: var(--txt-2xl);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.publicar__enviar {
+  padding: var(--espaco-4);
+  border: none;
+  border-radius: var(--raio-p);
+  background-color: var(--cor-destaque);
+  color: var(--cor-sobre-cor);
+  font-size: var(--txt-lg);
+  font-weight: 700;
+}
+
+.publicar__aviso {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-2);
+  padding: var(--espaco-3);
+  border-radius: var(--raio-p);
+}
+
+.publicar__aviso[hidden] {
+  display: none;
+}
+
+.publicar__aviso svg {
+  flex: 0 0 auto;
+}
+
+.publicar__aviso span {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.publicar__aviso--ok {
+  background-color: var(--estado-ok-fundo);
+  color: var(--estado-ok-tinta);
+}
+
+.publicar__aviso--erro {
+  background-color: var(--estado-erro-fundo);
+  color: var(--estado-erro-tinta);
+}
+
+.publicar__aviso a {
+  color: inherit;
+  font-weight: 700;
+}

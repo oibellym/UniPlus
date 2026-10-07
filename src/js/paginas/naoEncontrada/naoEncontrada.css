@@ -1,0 +1,38 @@
+/* Cor de destaque nesta tela: só a saída para o início. */
+
+.nao-encontrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espaco-4);
+  padding: var(--espaco-6) var(--espaco-4) 0;
+  text-align: center;
+}
+
+.nao-encontrada svg {
+  color: var(--tinta-3);
+}
+
+.nao-encontrada__titulo {
+  font-size: var(--txt-2xl);
+}
+
+.nao-encontrada__apoio {
+  color: var(--tinta-2);
+}
+
+.nao-encontrada__apoio code {
+  padding: 0 var(--espaco-1);
+  border-radius: var(--raio-p);
+  background-color: var(--superficie-3);
+  overflow-wrap: anywhere;
+}
+
+.nao-encontrada__voltar {
+  padding: var(--espaco-3) var(--espaco-5);
+  border-radius: var(--raio-p);
+  background-color: var(--cor-destaque);
+  color: var(--cor-sobre-cor);
+  font-weight: 700;
+  text-decoration: none;
+}

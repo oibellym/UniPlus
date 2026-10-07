@@ -1,0 +1,212 @@
+/* Cor de destaque nesta tela: só o número grande de voluntários que faltam. */
+
+.detalhe {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-5);
+  padding: var(--espaco-4) var(--espaco-4) 0;
+}
+
+.detalhe--ausente {
+  gap: var(--espaco-3);
+  padding-top: var(--espaco-6);
+}
+
+.detalhe__voltar {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-1);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.detalhe__topo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+}
+
+.detalhe__categoria {
+  align-self: flex-start;
+  padding: 0 var(--espaco-2);
+  border-radius: var(--raio-pilula);
+  background-color: var(--cor-primaria-lavada);
+  color: var(--cor-primaria);
+  font-size: var(--txt-xs);
+  font-weight: 700;
+}
+
+.detalhe__titulo {
+  font-size: var(--txt-2xl);
+}
+
+.detalhe__org {
+  color: var(--tinta-2);
+}
+
+/* O bloco de decisão: falta, quando e horário lidos em uma olhada. */
+.detalhe__decisao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  padding: var(--espaco-4);
+  background-color: var(--superficie-1);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-m);
+}
+
+.detalhe__metricas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--espaco-4);
+}
+
+.detalhe__metrica {
+  flex: 1 1 80px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.detalhe__metrica--principal {
+  flex: 1 1 100%;
+}
+
+.detalhe__numero {
+  color: var(--cor-destaque);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.detalhe__completo {
+  font-size: var(--txt-xl);
+  font-weight: 700;
+}
+
+.detalhe__valor {
+  font-size: var(--txt-lg);
+  font-weight: 700;
+}
+
+.detalhe__apoio {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+/* A barra ocupa a linha inteira por flex (sem width), e a espessura
+   vem do font-size: a altura padrão do <progress> é 1em. */
+.detalhe__trilho {
+  display: flex;
+  margin-top: var(--espaco-2);
+}
+
+.detalhe__barra {
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: var(--espaco-2);
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: var(--raio-pilula);
+  background-color: var(--superficie-3);
+  overflow: hidden;
+}
+
+.detalhe__barra::-webkit-progress-bar {
+  background-color: var(--superficie-3);
+  border-radius: var(--raio-pilula);
+}
+
+.detalhe__barra::-webkit-progress-value {
+  background-color: var(--cor-primaria);
+  border-radius: var(--raio-pilula);
+}
+
+.detalhe__barra::-moz-progress-bar {
+  background-color: var(--cor-primaria);
+  border-radius: var(--raio-pilula);
+}
+
+.detalhe__legenda {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+.detalhe__descricao {
+  font-size: var(--txt-lg);
+  line-height: 1.55;
+}
+
+.detalhe__bloco {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.detalhe__bloco h2 {
+  font-size: var(--txt-md);
+  color: var(--tinta-2);
+}
+
+.detalhe__precisa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+  list-style: none;
+}
+
+.detalhe__precisa li {
+  flex: 0 1 auto;
+  padding: var(--espaco-1) var(--espaco-3);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-pilula);
+  background-color: var(--superficie-1);
+  font-size: var(--txt-sm);
+}
+
+.detalhe__linha {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-2);
+}
+
+.detalhe__linha svg {
+  flex: 0 0 18px;
+  color: var(--tinta-3);
+}
+
+.detalhe__linha span {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.detalhe__quem {
+  padding: var(--espaco-4);
+  border-left: 3px solid var(--cor-primaria);
+  background-color: var(--superficie-1);
+  border-radius: 0 var(--raio-p) var(--raio-p) 0;
+}
+
+.detalhe__org-nome {
+  font-weight: 700;
+}
+
+.detalhe__org-foco {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+.detalhe__autor {
+  color: var(--tinta-3);
+  font-size: var(--txt-sm);
+}
+
+.detalhe__como {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}

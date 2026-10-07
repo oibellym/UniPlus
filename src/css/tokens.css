@@ -1,0 +1,61 @@
+/* Tokens do Uni+.
+   Nenhuma regra do projeto escreve cor direto: tudo vem daqui.
+
+   Proporção 60 / 30 / 10, como no KiOferta:
+   60  superfícies (fundo e cartões)
+   30  tinta e estrutura (texto, linhas)
+   10  cor principal (navegação, links, botões comuns)
+       e a cor de destaque, usada uma única vez por tela:
+       o número de voluntários que faltam ou a ação principal. */
+
+:root {
+  /* Cores cromáticas */
+  --cor-primaria: #1f5c4a;        /* verde-mata: navegação, links, botões */
+  --cor-primaria-lavada: #e2efe9; /* fundo de selos e chips ativos */
+  --cor-destaque: #b8235a;        /* framboesa: o número que decide */
+  --cor-sobre-cor: #ffffff;       /* texto em cima de cor cheia */
+
+  /* Tinta */
+  --tinta-1: #17201d; /* texto principal */
+  --tinta-2: #4b5853; /* texto secundário */
+  --tinta-3: #6f7c77; /* apoio, placeholders */
+  --linha: #d3dcd8;   /* bordas e divisórias */
+
+  /* Superfícies */
+  --superficie-1: #ffffff; /* cartões */
+  --superficie-2: #f2f5f3; /* fundo da página */
+  --superficie-3: #e6ebe8; /* campos desabilitados, trilho da barra */
+
+  /* Estados: sempre par tinta + fundo lavado */
+  --estado-ok-tinta: #1d6b3a;
+  --estado-ok-fundo: #e3f3e8;
+  --estado-alerta-tinta: #8a5a00;
+  --estado-alerta-fundo: #fbf0d9;
+  --estado-erro-tinta: #9b1c1c;
+  --estado-erro-fundo: #fbe7e7;
+
+  /* Tipografia: uma família, sete degraus */
+  --fonte: 'Atkinson Hyperlegible', 'Segoe UI', Roboto, Arial, sans-serif;
+  --txt-numero: 2.25rem; /* 36 - o número que decide */
+  --txt-2xl: 1.5rem;     /* 24 - título de tela */
+  --txt-xl: 1.1875rem;   /* 19 - título de seção */
+  --txt-lg: 1rem;        /* 16 - nome do mutirão */
+  --txt-md: 0.9375rem;   /* 15 - corpo */
+  --txt-sm: 0.8125rem;   /* 13 - apoio */
+  --txt-xs: 0.75rem;     /* 12 - rótulo do menu e selos */
+
+  /* Espaçamento: grade de 4px */
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 12px;
+  --espaco-4: 16px;
+  --espaco-5: 24px;
+  --espaco-6: 32px;
+
+  /* Forma */
+  --raio-p: 6px;
+  --raio-m: 12px;
+  --raio-pilula: 999px;
+  --largura-app: 440px;
+  --altura-menu: 64px;
+}

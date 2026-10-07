@@ -1,0 +1,10 @@
+{
+  "appId": "br.fatec.mogi.unimais",
+  "appName": "Uni+",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}

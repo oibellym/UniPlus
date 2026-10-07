@@ -1,0 +1,4 @@
+/* Ponto único de entrada do CSS global.
+   O CSS de cada tela é importado pelo módulo da própria tela. */
+@import url('./tokens.css');
+@import url('./base.css');

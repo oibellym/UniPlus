@@ -1,0 +1,133 @@
+/* Cor de destaque nesta tela: só o botão Buscar. */
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-6);
+  padding: var(--espaco-6) var(--espaco-4) 0;
+}
+
+.inicio__topo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.inicio__marca {
+  align-self: flex-start;
+  color: var(--cor-primaria);
+  font-size: var(--txt-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.inicio__titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.inicio__apoio {
+  color: var(--tinta-2);
+}
+
+/* A busca é o elemento dominante: a altura vem do padding do campo. */
+.inicio__busca {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--superficie-1);
+  border: 2px solid var(--tinta-1);
+  border-radius: var(--raio-m);
+  overflow: hidden;
+}
+
+.inicio__icone {
+  flex: 0 0 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tinta-3);
+}
+
+.inicio__campo {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: var(--espaco-4) var(--espaco-2) var(--espaco-4) 0;
+  border: none;
+  background: transparent;
+  font-size: var(--txt-lg);
+}
+
+.inicio__campo:focus {
+  outline: none;
+}
+
+.inicio__busca:focus-within {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+.inicio__botao {
+  flex: 0 0 auto;
+  padding: 0 var(--espaco-4);
+  border: none;
+  background-color: var(--cor-destaque);
+  color: var(--cor-sobre-cor);
+  font-weight: 700;
+}
+
+.inicio__categorias {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+.inicio__subtitulo {
+  font-size: var(--txt-md);
+  color: var(--tinta-2);
+}
+
+.inicio__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+  list-style: none;
+}
+
+/* Duas colunas em 360px sem largura fixa: base de 140px que cresce. */
+.inicio__item {
+  flex: 1 1 140px;
+  display: flex;
+}
+
+.inicio__categoria {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: var(--espaco-3);
+  background-color: var(--superficie-1);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-p);
+  color: var(--tinta-1);
+  text-decoration: none;
+}
+
+.inicio__categoria svg {
+  flex: 0 0 auto;
+  color: var(--cor-primaria);
+}
+
+.inicio__categoria-nome {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: var(--txt-sm);
+  font-weight: 700;
+}
+
+.inicio__categoria-qtd {
+  flex: 0 0 auto;
+  color: var(--tinta-3);
+  font-size: var(--txt-sm);
+  font-variant-numeric: tabular-nums;
+}

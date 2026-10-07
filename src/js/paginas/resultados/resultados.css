@@ -1,0 +1,216 @@
+/* Cor de destaque nesta tela: só o número de pessoas que faltam,
+   o mesmo papel do preço na lista do KiOferta. */
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+  padding: var(--espaco-5) var(--espaco-4) 0;
+}
+
+.resultados__topo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+}
+
+.resultados__titulo {
+  font-size: var(--txt-2xl);
+}
+
+.resultados__resumo {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+.resultados__filtros {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+.resultados__campo-busca {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: 0 var(--espaco-3);
+  background-color: var(--superficie-1);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-m);
+  color: var(--tinta-3);
+}
+
+.resultados__campo-busca svg {
+  flex: 0 0 auto;
+}
+
+.resultados__campo-busca:focus-within {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+.resultados__campo-busca input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: var(--espaco-3) 0;
+  border: none;
+  background: transparent;
+  color: var(--tinta-1);
+}
+
+.resultados__campo-busca input:focus {
+  outline: none;
+}
+
+.resultados__selecoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+}
+
+.resultados__selecao {
+  flex: 1 1 140px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  min-width: 0;
+  color: var(--tinta-2);
+  font-size: var(--txt-xs);
+}
+
+.resultados__selecao select {
+  padding: var(--espaco-2);
+  background-color: var(--superficie-1);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-p);
+  color: var(--tinta-1);
+  font-size: var(--txt-sm);
+}
+
+.resultados__lista {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--superficie-1);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-m);
+  overflow: hidden;
+}
+
+.resultados__lista li + li {
+  border-top: 1px solid var(--linha);
+}
+
+.resultado {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-3);
+  padding: var(--espaco-3);
+  color: var(--tinta-1);
+  text-decoration: none;
+}
+
+.resultado:hover .resultado__titulo {
+  text-decoration: underline;
+}
+
+.resultado__info {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.resultado__categoria {
+  align-self: flex-start;
+  padding: 0 var(--espaco-2);
+  border-radius: var(--raio-pilula);
+  background-color: var(--cor-primaria-lavada);
+  color: var(--cor-primaria);
+  font-size: var(--txt-xs);
+  font-weight: 700;
+}
+
+.resultado__titulo {
+  font-size: var(--txt-lg);
+  margin-top: var(--espaco-1);
+}
+
+.resultado__org {
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+.resultado__linha {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-1);
+  color: var(--tinta-2);
+  font-size: var(--txt-sm);
+}
+
+.resultado__linha svg {
+  flex: 0 0 16px;
+  color: var(--tinta-3);
+}
+
+/* Coluna de decisão à direita: o número alinhado em coluna, como o preço. */
+.resultado__decisao {
+  flex: 0 0 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.resultado__numero {
+  color: var(--cor-destaque);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.resultado__rotulo {
+  color: var(--tinta-2);
+  font-size: var(--txt-xs);
+  line-height: 1.2;
+}
+
+.resultado__decisao--completo .resultado__rotulo {
+  padding: var(--espaco-1) var(--espaco-2);
+  border-radius: var(--raio-p);
+  background-color: var(--superficie-3);
+}
+
+.resultados__vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espaco-3);
+  padding: var(--espaco-6) var(--espaco-4);
+  text-align: center;
+  background-color: var(--superficie-1);
+  border: 1px dashed var(--linha);
+  border-radius: var(--raio-m);
+  color: var(--tinta-2);
+}
+
+.resultados__vazio svg {
+  color: var(--tinta-3);
+}
+
+.resultados__vazio h2 {
+  color: var(--tinta-1);
+  font-size: var(--txt-xl);
+}
+
+.resultados__limpar {
+  padding: var(--espaco-2) var(--espaco-4);
+  border: 1px solid var(--cor-primaria);
+  border-radius: var(--raio-p);
+  background: transparent;
+  color: var(--cor-primaria);
+  font-weight: 700;
+}

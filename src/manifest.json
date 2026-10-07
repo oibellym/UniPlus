@@ -1,0 +1,13 @@
+{
+  "name": "Uni+ | Mutirões e voluntariado",
+  "short_name": "Uni+",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/imgs/logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#f2f5f3",
+  "theme_color": "#1f5c4a"
+}
