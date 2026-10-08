@@ -13,8 +13,10 @@ function inicio(app) {
   app.innerHTML = `
     <section class="inicio">
       <header class="inicio__topo">
-        <p class="inicio__marca">Uni<span aria-hidden="true">+</span></p>
-        <h1 class="inicio__titulo">Onde a sua ajuda faz falta?</h1>
+        <div class="inicio__marca">
+          <img class="inicio__logo" src="../assets/imgs/logo.png" alt="Logo do Uniplus" />
+          <h1 class="inicio__titulo">Onde a sua ajuda faz falta?</h1>
+        </div>
         <p class="inicio__apoio">
           ${abertos.length} mutirões em Mogi das Cruzes ainda precisam de
           ${pessoasQueFaltam} voluntários.

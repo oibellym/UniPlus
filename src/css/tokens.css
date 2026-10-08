@@ -12,18 +12,19 @@
   /* Cores cromáticas */
   --cor-primaria: #1f5c4a;        /* verde-mata: navegação, links, botões */
   --cor-primaria-lavada: #e2efe9; /* fundo de selos e chips ativos */
-  --cor-destaque: #b8235a;        /* framboesa: o número que decide */
+  --cor-secundaria: #d955b4;      /* rosa: seleção navbar */
+  --cor-destaque: #1f5c4a;        /* framboesa: o número que decide */
   --cor-sobre-cor: #ffffff;       /* texto em cima de cor cheia */
 
   /* Tinta */
-  --tinta-1: #17201d; /* texto principal */
+  --tinta-1: #1e2620; /* texto principal */
   --tinta-2: #4b5853; /* texto secundário */
   --tinta-3: #6f7c77; /* apoio, placeholders */
   --linha: #d3dcd8;   /* bordas e divisórias */
 
   /* Superfícies */
   --superficie-1: #ffffff; /* cartões */
-  --superficie-2: #f2f5f3; /* fundo da página */
+  --superficie-2: #f2f4f1; /* fundo da página */
   --superficie-3: #e6ebe8; /* campos desabilitados, trilho da barra */
 
   /* Estados: sempre par tinta + fundo lavado */

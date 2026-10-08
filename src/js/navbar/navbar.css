@@ -35,7 +35,7 @@
 }
 
 .navbar__link[aria-current='page'] {
-  color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   font-weight: 700;
-  border-top-color: var(--cor-primaria);
+  border-top-color: var(--cor-secundaria);
 }

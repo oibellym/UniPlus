@@ -13,21 +13,24 @@
   gap: var(--espaco-2);
 }
 
-.inicio__marca {
+.inicio__logo {
+  display:flex;
   align-self: flex-start;
-  color: var(--cor-primaria);
-  font-size: var(--txt-xl);
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  justify-self: center;
+  max-width: 50px;
+  border-radius: var(--raio-m);
+  box-shadow: 0 0 15px var(--espaco-1) var(--linha);
 }
 
 .inicio__titulo {
-  font-size: 2rem;
+  margin-top: var(--espaco-5);
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 .inicio__apoio {
+  margin-top: var(--espaco-2);
   color: var(--tinta-2);
 }
 
@@ -36,7 +39,7 @@
   display: flex;
   align-items: stretch;
   background-color: var(--superficie-1);
-  border: 2px solid var(--tinta-1);
+  border: 1px solid var(--linha);
   border-radius: var(--raio-m);
   overflow: hidden;
 }
