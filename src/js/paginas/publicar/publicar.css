@@ -92,7 +92,9 @@
   border: 1px solid var(--linha);
   border-radius: var(--raio-p);
   background-color: var(--superficie-1);
+  font-family: inherit;
   font-size: var(--txt-lg);
+  color: inherit;
 }
 
 .publicar__campo textarea {
@@ -100,7 +102,8 @@
 }
 
 .publicar__campo input:user-invalid,
-.publicar__campo select:user-invalid {
+.publicar__campo select:user-invalid,
+.publicar__campo textarea:user-invalid {
   border-color: var(--estado-erro-tinta);
   background-color: var(--estado-erro-fundo);
 }
@@ -130,12 +133,8 @@
   border-radius: var(--raio-p);
 }
 
-.publicar__aviso[hidden] {
-  display: none;
-}
-
 .publicar__aviso svg {
-  flex: 0 0 auto;
+  flex: 0 0 18px;
 }
 
 .publicar__aviso span {
