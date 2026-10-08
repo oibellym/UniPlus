@@ -1,7 +1,7 @@
 # Uni+
 
 **Tema sorteado:** Mutirões e voluntariado
-**Disciplina:** Análise e Desenvolvimento de Sistemas · FATEC Mogi das Cruzes
+**Disciplina:** Dispositivos Móveis · FATEC Mogi das Cruzes
 **Desafio 1:** o mesmo esqueleto, outro negócio
 
 > **A pergunta que o Uni+ responde:** Qual multirão perto de mim precisa de ajuda neste fim de semana?
