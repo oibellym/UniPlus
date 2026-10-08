@@ -2,7 +2,6 @@ import './naoEncontrada.css'
 import { escapar } from '../../util/formatos.js'
 
 // Tela 6 · Rota inexistente
-// O roteador chega aqui quando o find na lista de rotas devolve undefined.
 function naoEncontrada(app, parametros, caminhoPedido = '') {
   app.innerHTML = `
     <section class="nao-encontrada">

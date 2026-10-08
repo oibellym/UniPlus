@@ -1,5 +1,5 @@
 // Módulo de sessão: entrar, sair e usuarioAtual.
-// A sessão vive só na memória: um F5 desloga, como o desafio permite.
+
 import usuarios from '../dadosMockados/usuarios.js'
 import { normalizar } from '../util/formatos.js'
 
