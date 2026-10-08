@@ -6,7 +6,7 @@ import { entrar, sair, usuarioAtual } from '../../sessao/sessao.js'
 import { faltam, formatarData, textoPrazo, escapar, desenharIcones } from '../../util/formatos.js'
 
 // Tela 5 · Minha conta
-// Sem sessão: formulário de login (find no módulo de sessão).
+// Sem sessão: formulário de login 
 // Com sessão: os dados de quem entrou e um filter pelos mutirões dele.
 function conta(app, parametros) {
   const usuario = usuarioAtual()

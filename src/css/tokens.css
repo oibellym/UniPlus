@@ -1,3 +1,4 @@
+```css
 /* Tokens do Uni+.
    Nenhuma regra do projeto escreve cor direto: tudo vem daqui.
 
@@ -13,7 +14,7 @@
   --cor-primaria: #1f5c4a;        /* verde-mata: navegação, links, botões */
   --cor-primaria-lavada: #e2efe9; /* fundo de selos e chips ativos */
   --cor-secundaria: #d955b4;      /* rosa: seleção navbar */
-  --cor-destaque: #1f5c4a;        /* framboesa: o número que decide */
+  --cor-destaque: #b8235a;        /* framboesa: o número que decide */
   --cor-sobre-cor: #ffffff;       /* texto em cima de cor cheia */
 
   /* Tinta */
@@ -43,7 +44,7 @@
   --txt-lg: 1rem;        /* 16 - nome do mutirão */
   --txt-md: 0.9375rem;   /* 15 - corpo */
   --txt-sm: 0.8125rem;   /* 13 - apoio */
-  --txt-xs: 0.75rem;     /* 12 - rótulo do menu e selos */
+  --txt-xs: 0.75rem;    /* 12 - rótulo do menu e selos */
 
   /* Espaçamento: grade de 4px */
   --espaco-1: 4px;
@@ -60,3 +61,4 @@
   --largura-app: 440px;
   --altura-menu: 64px;
 }
+```
