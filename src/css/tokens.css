@@ -1,13 +1,10 @@
-```css
 /* Tokens do Uni+.
    Nenhuma regra do projeto escreve cor direto: tudo vem daqui.
 
    Proporção 60 / 30 / 10, como no KiOferta:
    60  superfícies (fundo e cartões)
    30  tinta e estrutura (texto, linhas)
-   10  cor principal (navegação, links, botões comuns)
-       e a cor de destaque, usada uma única vez por tela:
-       o número de voluntários que faltam ou a ação principal. */
+   10  cor principal (navegação, links, botões comuns) */
 
 :root {
   /* Cores cromáticas */
@@ -61,4 +58,3 @@
   --largura-app: 440px;
   --altura-menu: 64px;
 }
-```
